@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'skywind3000/asyncrun.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'ghifarit53/tokyonight-vim'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -53,7 +54,15 @@ filetype plugin indent on    " required
 "set term=xterm-256color
 "set termencoding=utf-8
 
-let g:airline_theme='luna'
+let g:airline_theme='tokyonight'
+
+set termguicolors
+
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight 
+
 
 " --- mappings ---
 imap jk <Esc>
